@@ -15,10 +15,22 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Plugins
+NeoBundle 'Shougo/vimproc.vim', {
+      \ 'build' : {
+      \     'windows' : 'make -f make_mingw32.mak',
+      \     'cygwin' : 'make -f make_cygwin.mak',
+      \     'mac' : 'make -f make_mac.mak',
+      \     'unix' : 'make -f make_unix.mak',
+      \    },
+      \ }
+
 NeoBundle 'bling/vim-airline'
 
 " Languages
 NeoBundle 'vim-ruby/vim-ruby'
+
+" Source Control
+NeoBundle 'tpope/vim-fugitive'
 
 " Color Schemes
 NeoBundle 'nanotech/jellybeans.vim'
