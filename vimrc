@@ -14,6 +14,9 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+" Plugins
+NeoBundle 'bling/vim-airline'
+
 " Color Schemes
 NeoBundle 'nanotech/jellybeans.vim'
 
@@ -69,7 +72,7 @@ colorscheme jellybeans
 set laststatus=2
 
 " Keycode sequence timeout (ms)
-" set ttimeoutlen=50
+set ttimeoutlen=50
 
 " --------
 " Autocmds
@@ -237,6 +240,9 @@ command! -bar -nargs=1 -bang -complete=file Rename :
 " -------
 " Plugins
 " -------
+
+let g:airline_left_sep=''
+let g:airline_right_sep=''
 
 " ---
 " GUI
