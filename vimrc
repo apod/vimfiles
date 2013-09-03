@@ -17,6 +17,9 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Plugins
 NeoBundle 'bling/vim-airline'
 
+" Languages
+NeoBundle 'vim-ruby/vim-ruby'
+
 " Color Schemes
 NeoBundle 'nanotech/jellybeans.vim'
 
