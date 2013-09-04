@@ -23,8 +23,10 @@ NeoBundle 'Shougo/vimproc.vim', {
       \     'unix' : 'make -f make_unix.mak',
       \    },
       \ }
-
-NeoBundle 'bling/vim-airline'
+NeoBundle 'bling/vim-airline' "{{{
+  let g:airline_left_sep=''
+  let g:airline_right_sep=''
+"}}}
 
 " Languages
 NeoBundle 'vim-ruby/vim-ruby'
@@ -88,6 +90,10 @@ set laststatus=2
 
 " Keycode sequence timeout (ms)
 set ttimeoutlen=50
+
+" Folds
+set foldmethod=marker
+set foldlevelstart=99
 
 " --------
 " Autocmds
@@ -255,9 +261,6 @@ command! -bar -nargs=1 -bang -complete=file Rename :
 " -------
 " Plugins
 " -------
-
-let g:airline_left_sep=''
-let g:airline_right_sep=''
 
 " ---
 " GUI
