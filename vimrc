@@ -23,6 +23,47 @@ NeoBundle 'Shougo/vimproc.vim', {
       \     'unix' : 'make -f make_unix.mak',
       \    },
       \ }
+NeoBundle 'Shougo/unite.vim' "{{{
+  let g:unite_data_directory = '~/.vim-tmp/unite'
+  let g:unite_source_rec_max_cache_files = 5000
+  let g:unite_source_file_mru_long_limit = 5000
+  let g:unite_prompt='» '
+
+  " Enable  unite-source-history/yank
+  let g:unite_source_history_yank_enable = 1
+
+  " Start in insert mode
+  let g:unite_enable_start_insert = 1
+
+  " Use the fuzzy matcher
+  call unite#filters#matcher_default#use(['matcher_fuzzy'])
+  " Use the rank sorter
+  call unite#filters#sorter_default#use(['sorter_rank'])
+
+  function! s:unite_settings()
+    nmap <buffer> <ESC> <Plug>(unite_exit)
+    imap <buffer> <C-j> <Plug>(unite_select_next_line)
+    imap <buffer> <C-k> <Plug>(unite_select_previous_line)
+  endfunction
+  autocmd FileType unite call s:unite_settings()
+
+  " Prefix key
+  nnoremap [unite] <Nop>
+  nmap <space> [unite]
+
+  " Mappings
+  nnoremap <silent> [unite]<space> :<C-u>Unite -buffer-name=mru file_mru<CR>
+  nnoremap <silent> [unite]f :<C-u>Unite -toggle -auto-resize -buffer-name=files file_rec/async<cr><c-u>
+  nnoremap <silent> [unite]b :<C-u>Unite -auto-resize -buffer-name=buffers buffer<cr>
+  nnoremap <silent> [unite]l :<C-u>Unite -auto-resize -buffer-name=line line<cr>
+  nnoremap <silent> [unite]y :<C-u>Unite -buffer-name=yanks history/yank<CR>
+"}}}
+NeoBundle 'Shougo/unite-outline' "{{{
+  nnoremap <silent> [unite]o :<C-u>Unite -auto-resize -buffer-name=outline outline<cr>
+"}}}
+NeoBundle 'Shougo/unite-help' "{{{
+  nnoremap <silent> [unite]h :<C-u>Unite -auto-resize -buffer-name=help help<cr>
+"}}}
 NeoBundle 'bling/vim-airline' "{{{
   let g:airline_left_sep=''
   let g:airline_right_sep=''
