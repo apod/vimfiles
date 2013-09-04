@@ -68,6 +68,7 @@ NeoBundle 'bling/vim-airline' "{{{
   let g:airline_left_sep=''
   let g:airline_right_sep=''
 "}}}
+NeoBundle 'tpope/vim-unimpaired'
 
 " Languages
 NeoBundle 'vim-ruby/vim-ruby'
@@ -164,16 +165,6 @@ augroup filetypes_general
 augroup END
 
 
-function! NetrwMappings()
-  nnoremap <buffer><silent> o :<C-u>execute "call feedkeys('\r')"<cr>
-endfunction
-
-augroup netrw_mappings
-  autocmd!
-
-  autocmd FileType netrw call NetrwMappings()
-augroup END
-
 function! CoffeScriptMappings()
   nnoremap <leader>cc :CoffeeCompile vert"<cr><C-w>h
   nnoremap <leader>cw :CoffeeCompile watch vert"<cr>
@@ -183,19 +174,6 @@ augroup coffeescript_mappings
   autocmd!
 
   autocmd FileType coffee call CoffeScriptMappings()
-augroup END
-
-function! RubyMappings()
-  nmap <leader>mm <Plug>(xmpfilter-mark)
-  nmap <leader>mn <Plug>(xmpfilter-run)
-  vmap <leader>mm <Plug>(xmpfilter-mark)
-  vmap <leader>mn <Plug>(xmpfilter-run)
-endfunction
-
-augroup ruby_mappings
-  autocmd!
-
-  autocmd FileType ruby call RubyMappings()
 augroup END
 
 " --------
@@ -298,10 +276,6 @@ command! -bar -nargs=1 -bang -complete=file Rename :
       \ endif |
       \ unlet s:src |
       \ unlet s:dst
-
-" -------
-" Plugins
-" -------
 
 " ---
 " GUI
