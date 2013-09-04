@@ -72,6 +72,9 @@ NeoBundle 'Shougo/unite-outline' "{{{
 NeoBundle 'Shougo/unite-help' "{{{
   nnoremap <silent> [unite]h :<C-u>Unite -auto-resize -buffer-name=help help<CR>
 "}}}
+NeoBundle 'Shougo/vimfiler.vim' "{{{
+  let g:vimfiler_as_default_explorer=1 
+"}}}
 NeoBundle 'bling/vim-airline' "{{{
   let g:airline_left_sep=''
   let g:airline_right_sep=''
