@@ -35,6 +35,13 @@ NeoBundle 'Shougo/unite.vim' "{{{
   " Start in insert mode
   let g:unite_enable_start_insert = 1
 
+  " Use ag for search
+  if executable('ag')
+    let g:unite_source_grep_command='ag'
+    let g:unite_source_grep_default_opts='--nocolor --nogroup --column'
+    let g:unite_source_grep_recursive_opt=''
+  endif
+
   " Use the fuzzy matcher
   call unite#filters#matcher_default#use(['matcher_fuzzy'])
   " Use the rank sorter
@@ -53,16 +60,17 @@ NeoBundle 'Shougo/unite.vim' "{{{
 
   " Mappings
   nnoremap <silent> [unite]<space> :<C-u>Unite -buffer-name=mru file_mru<CR>
-  nnoremap <silent> [unite]f :<C-u>Unite -toggle -auto-resize -buffer-name=files file_rec/async<cr><c-u>
-  nnoremap <silent> [unite]b :<C-u>Unite -auto-resize -buffer-name=buffers buffer<cr>
-  nnoremap <silent> [unite]l :<C-u>Unite -auto-resize -buffer-name=line line<cr>
+  nnoremap <silent> [unite]f :<C-u>Unite -toggle -auto-resize -buffer-name=files file_rec/async<CR>
+  nnoremap <silent> [unite]b :<C-u>Unite -auto-resize -buffer-name=buffers buffer<CR>
+  nnoremap <silent> [unite]l :<C-u>Unite -auto-resize -buffer-name=line line<CR>
   nnoremap <silent> [unite]y :<C-u>Unite -buffer-name=yanks history/yank<CR>
+  nnoremap <silent> [unite]/ :<C-u>Unite -no-quit -buffer-name=search grep:.<CR>
 "}}}
 NeoBundle 'Shougo/unite-outline' "{{{
-  nnoremap <silent> [unite]o :<C-u>Unite -auto-resize -buffer-name=outline outline<cr>
+  nnoremap <silent> [unite]o :<C-u>Unite -auto-resize -buffer-name=outline outline<CR>
 "}}}
 NeoBundle 'Shougo/unite-help' "{{{
-  nnoremap <silent> [unite]h :<C-u>Unite -auto-resize -buffer-name=help help<cr>
+  nnoremap <silent> [unite]h :<C-u>Unite -auto-resize -buffer-name=help help<CR>
 "}}}
 NeoBundle 'bling/vim-airline' "{{{
   let g:airline_left_sep=''
