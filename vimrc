@@ -79,8 +79,10 @@ NeoBundle 'bling/vim-airline' "{{{
   let g:airline_left_sep=''
   let g:airline_right_sep=''
 "}}}
-NeoBundle 'tpope/vim-unimpaired'
+NeoBundle 'tpope/vim-abolish'
+NeoBundle 'tpope/vim-repeat'
 NeoBundle 'tpope/vim-surround'
+NeoBundle 'tpope/vim-unimpaired'
 
 " Languages
 NeoBundle 'vim-ruby/vim-ruby'
