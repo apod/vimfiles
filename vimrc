@@ -73,16 +73,18 @@ NeoBundle 'Shougo/unite-help' "{{{
   nnoremap <silent> [unite]h :<C-u>Unite -auto-resize -buffer-name=help help<CR>
 "}}}
 NeoBundle 'Shougo/vimfiler.vim' "{{{
-  let g:vimfiler_as_default_explorer=1 
+  let g:vimfiler_as_default_explorer=1
 "}}}
 NeoBundle 'bling/vim-airline' "{{{
   let g:airline_left_sep=''
   let g:airline_right_sep=''
 "}}}
 NeoBundle 'tpope/vim-unimpaired'
+NeoBundle 'tpope/vim-surround'
 
 " Languages
 NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'slim-template/vim-slim'
 
 " Source Control
 NeoBundle 'tpope/vim-fugitive'
