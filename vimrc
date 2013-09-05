@@ -83,6 +83,7 @@ NeoBundle 'tpope/vim-abolish'
 NeoBundle 'tpope/vim-repeat'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-unimpaired'
+NeoBundle 'tomtom/tcomment_vim'
 
 " Languages
 NeoBundle 'vim-ruby/vim-ruby'
