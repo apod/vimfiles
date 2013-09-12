@@ -46,6 +46,8 @@ NeoBundle 'Shougo/unite.vim' "{{{
   call unite#filters#matcher_default#use(['matcher_fuzzy'])
   " Use the rank sorter
   call unite#filters#sorter_default#use(['sorter_rank'])
+  call unite#custom#source('file_rec/async', 'ignore_pattern', '\.\%(png\|gif\|jpe\?g\|swf\|ttf\|eot\|woff\)$')
+  call unite#custom#source('grep', 'ignore_pattern', '\.\%(png\|gif\|jpe\?g\|swf\|ttf\|eot\|woff\|log\)$')
 
   function! s:unite_settings()
     nmap <buffer> <ESC> <Plug>(unite_exit)
