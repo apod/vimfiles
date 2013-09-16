@@ -77,6 +77,7 @@ NeoBundle 'Shougo/unite-help' "{{{
 NeoBundle 'Shougo/vimfiler.vim' "{{{
   let g:vimfiler_as_default_explorer=1
 "}}}
+
 NeoBundle 'bling/vim-airline' "{{{
   let g:airline_left_sep=''
   let g:airline_right_sep=''
@@ -89,8 +90,7 @@ NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'godlygeek/tabular'
 
 " Languages
-NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'slim-template/vim-slim'
+NeoBundle 'sheerun/vim-polyglot'
 
 " Source Control
 NeoBundle 'tpope/vim-fugitive'
