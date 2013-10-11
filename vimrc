@@ -97,6 +97,9 @@ NeoBundle 'tpope/vim-fugitive'
 
 " Color Schemes
 NeoBundle 'nanotech/jellybeans.vim'
+NeoBundle 'Pychimp/vim-luna'
+NeoBundle 'Pychimp/vim-sol'
+NeoBundle 'godlygeek/csapprox'
 
 " Installation check
 NeoBundleCheck
@@ -144,7 +147,7 @@ set backspace=indent,eol,start
 set ts=2 sts=2 sw=2 expandtab
 
 " Colorscheme
-colorscheme jellybeans
+colorscheme luna
 
 " Always show status line
 set laststatus=2
