@@ -90,16 +90,19 @@ NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'godlygeek/tabular'
 
 " Languages
-NeoBundle 'sheerun/vim-polyglot'
+NeoBundle 'othree/html5.vim'
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'slim-template/vim-slim'
+NeoBundle 'tpope/vim-haml'
+NeoBundle 'kchmck/vim-coffee-script'
 
 " Source Control
 NeoBundle 'tpope/vim-fugitive'
 
 " Color Schemes
 NeoBundle 'nanotech/jellybeans.vim'
-NeoBundle 'Pychimp/vim-luna'
-NeoBundle 'Pychimp/vim-sol'
-NeoBundle 'godlygeek/csapprox'
+NeoBundle 'chriskempson/vim-tomorrow-theme'
 
 " Installation check
 NeoBundleCheck
@@ -147,7 +150,7 @@ set backspace=indent,eol,start
 set ts=2 sts=2 sw=2 expandtab
 
 " Colorscheme
-colorscheme luna
+colorscheme Tomorrow-Night
 
 " Always show status line
 set laststatus=2
