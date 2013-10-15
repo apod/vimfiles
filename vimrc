@@ -101,6 +101,9 @@ NeoBundle 'kchmck/vim-coffee-script'
 " Source Control
 NeoBundle 'tpope/vim-fugitive'
 
+" tmux
+NeoBundle 'christoomey/vim-tmux-navigator'
+
 " Color Schemes
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'chriskempson/vim-tomorrow-theme'
@@ -223,10 +226,10 @@ xnoremap H ^
 xnoremap L $
 
 " Move around windows with <C-hjkl>
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-h> <C-w>h
-nnoremap <C-l> <C-w>l
+" nnoremap <C-j> <C-w>j
+" nnoremap <C-k> <C-w>k
+" nnoremap <C-h> <C-w>h
+" nnoremap <C-l> <C-w>l
 
 " <C-pn> should filter the command history like <Up>/<Down>
 cnoremap <C-p> <Up>
