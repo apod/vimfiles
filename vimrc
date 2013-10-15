@@ -88,6 +88,7 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'godlygeek/tabular'
+NeoBundle 'justinmk/vim-sneak'
 
 " Languages
 NeoBundle 'othree/html5.vim'
