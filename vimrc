@@ -102,6 +102,12 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'tpope/vim-fugitive'
 
 " tmux
+NeoBundle 'benmills/vimux' "{{{
+  nnoremap <leader>vl :VimuxRunLastCommand<CR>
+  nnoremap <leader>vc :VimuxPromptCommand<CR>
+  nnoremap <leader>vq :VimuxCloseRunner<CR>
+"}}}
+
 NeoBundle 'christoomey/vim-tmux-navigator'
 
 " Color Schemes
