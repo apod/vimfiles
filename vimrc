@@ -113,6 +113,7 @@ NeoBundle 'christoomey/vim-tmux-navigator'
 " Color Schemes
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'chriskempson/vim-tomorrow-theme'
+NeoBundle 'junegunn/seoul256.vim'
 
 " Installation check
 NeoBundleCheck
