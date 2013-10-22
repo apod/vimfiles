@@ -98,6 +98,9 @@ NeoBundle 'slim-template/vim-slim'
 NeoBundle 'tpope/vim-haml'
 NeoBundle 'kchmck/vim-coffee-script'
 
+" Frameworks
+NeoBundle 'tpope/vim-rails'
+
 " Source Control
 NeoBundle 'tpope/vim-fugitive'
 
