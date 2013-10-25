@@ -248,6 +248,9 @@ cnoremap <C-n> <Down>
 " <C-a> should move the cursor position to the start of the command-line
 cnoremap <C-a> <Home>
 
+" Y yanks to the end of the line instead of yy
+noremap Y y$
+
 " Yank and put to/from the "* register
 vnoremap <leader>y "*y
 nnoremap <leader>p :put *<CR>
