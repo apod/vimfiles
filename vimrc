@@ -87,8 +87,11 @@ NeoBundle 'tpope/vim-repeat'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tomtom/tcomment_vim'
-NeoBundle 'godlygeek/tabular'
 NeoBundle 'justinmk/vim-sneak'
+NeoBundle 'junegunn/vim-easy-align' "{{{
+  vnoremap <silent> <Enter> :EasyAlign<Enter>
+  vnoremap <silent> <Leader><Enter> :LiveEasyAlign<Enter>
+"}}}
 
 " Languages
 NeoBundle 'othree/html5.vim'
