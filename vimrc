@@ -24,16 +24,16 @@ NeoBundle 'Shougo/vimproc.vim', {
       \    },
       \ }
 NeoBundle 'Shougo/unite.vim' "{{{
-  let g:unite_data_directory = '~/.vim-tmp/unite'
-  let g:unite_source_rec_max_cache_files = 5000
-  let g:unite_source_file_mru_long_limit = 5000
+  let g:unite_data_directory='~/.vim-tmp/unite'
+  let g:unite_source_rec_max_cache_files=5000
+  let g:unite_source_file_mru_long_limit=5000
   let g:unite_prompt='» '
 
   " Enable  unite-source-history/yank
-  let g:unite_source_history_yank_enable = 1
+  let g:unite_source_history_yank_enable=1
 
   " Start in insert mode
-  let g:unite_enable_start_insert = 1
+  let g:unite_enable_start_insert=1
 
   " Use ag for search
   if executable('ag')
@@ -277,9 +277,9 @@ nmap <leader><leader> <C-^>
 xnoremap <leader>r :ExtractVisualSelection <C-r>=expand('%:h') . '/'<CR>
 
 command! -range -bar -nargs=1 -bang -complete=file ExtractVisualSelection :
-      \ let s:starts_at = expand(<line1>) |
-      \ let s:ends_at = expand(<line2>) |
-      \ let s:dst = expand(<q-args>) |
+      \ let s:starts_at=expand(<line1>) |
+      \ let s:ends_at=expand(<line2>) |
+      \ let s:dst=expand(<q-args>) |
       \ execute s:starts_at . ',' . s:ends_at . 'write<bang>' . s:dst |
       \ execute s:starts_at . ',' . s:ends_at . 'delete' |
       \ execute 'rightbelow vsplit' . s:dst |
@@ -296,12 +296,12 @@ command! -range -bar -nargs=1 -bang -complete=file ExtractVisualSelection :
 command! -bar SudoWrite :
       \ setlocal nomodified |
       \ silent exe 'write !sudo tee % >/dev/null' |
-      \ let &modified = v:shell_error
+      \ let &modified=v:shell_error
 
 " Use :Rename to rename a file
 command! -bar -nargs=1 -bang -complete=file Rename :
-      \ let s:src = expand('%:p') |
-      \ let s:dst = expand(<q-args>) |
+      \ let s:src=expand('%:p') |
+      \ let s:dst=expand(<q-args>) |
       \ if isdirectory(s:dst) |
       \   let s:dst .= '/' . fnamemodify(s:src, ':t') |
       \ endif |
