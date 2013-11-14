@@ -14,6 +14,9 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+" Load local bundle
+call neobundle#local('~/.vim/local_bundle/', {})
+
 " Plugins
 NeoBundle 'Shougo/vimproc.vim', {
       \ 'build' : {
