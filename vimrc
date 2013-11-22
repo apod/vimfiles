@@ -258,9 +258,9 @@ cnoremap <C-a> <Home>
 noremap Y y$
 
 " Yank and put to/from the "* register
-vnoremap <leader>y "*y
-nnoremap <leader>p :put *<CR>
-nnoremap <leader>P :put! *<CR>
+vnoremap <leader>y "+y
+nnoremap <leader>p :put +<CR>
+nnoremap <leader>P :put! +<CR>
 
 " Mute highlight until next search
 nmap <silent> <leader>l :nohlsearch<CR>
