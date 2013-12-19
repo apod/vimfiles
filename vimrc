@@ -85,6 +85,7 @@ NeoBundle 'Shougo/vimfiler.vim' "{{{
 NeoBundle 'bling/vim-airline' "{{{
   let g:airline_left_sep=''
   let g:airline_right_sep=''
+  let g:airline_theme='lucius'
 "}}}
 NeoBundle 'tpope/vim-abolish'
 NeoBundle 'tpope/vim-repeat'
@@ -127,6 +128,8 @@ NeoBundle 'christoomey/vim-tmux-navigator'
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'chriskempson/vim-tomorrow-theme'
 NeoBundle 'junegunn/seoul256.vim'
+NeoBundle 'jonathanfilip/vim-lucius'
+NeoBundle 'w0ng/vim-hybrid'
 
 " Installation check
 NeoBundleCheck
@@ -174,7 +177,7 @@ set backspace=indent,eol,start
 set ts=2 sts=2 sw=2 expandtab
 
 " Colorscheme
-colorscheme Tomorrow-Night
+colorscheme hybrid
 
 " Always show status line
 set laststatus=2
