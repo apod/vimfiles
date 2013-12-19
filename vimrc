@@ -107,7 +107,7 @@ NeoBundle 'tpope/vim-haml'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'jnwhiteh/vim-golang'
 
-" Frameworks
+" Language Frameworks
 NeoBundle 'tpope/vim-rails'
 
 " Source Control
