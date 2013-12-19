@@ -97,6 +97,7 @@ NeoBundle 'junegunn/vim-easy-align' "{{{
   vnoremap <silent> <Leader><Enter> :LiveEasyAlign<Enter>
 "}}}
 NeoBundle 'osyo-manga/vim-over'
+NeoBundle 'dockyard/vim-easydir'
 
 " Languages
 NeoBundle 'othree/html5.vim'
