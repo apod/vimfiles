@@ -105,6 +105,7 @@ NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'tpope/vim-haml'
 NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'jnwhiteh/vim-golang'
 
 " Frameworks
 NeoBundle 'tpope/vim-rails'
