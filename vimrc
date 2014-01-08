@@ -331,6 +331,10 @@ command! -bar -nargs=1 -bang -complete=file Rename :
       \ unlet s:src |
       \ unlet s:dst
 
+if filereadable(glob('~/.vimrc.local'))
+  source ~/.vimrc.local
+endif
+
 " ---
 " GUI
 " ---
