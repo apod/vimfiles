@@ -175,6 +175,7 @@ set backupdir=~/.vim-tmp/backup
 set directory=~/.vim-tmp/swap
 
 " Undo persistence
+set undofile
 set undodir=~/.vim-tmp/undo
 
 " Vim's encoding
