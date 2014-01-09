@@ -56,6 +56,11 @@ NeoBundle 'Shougo/unite.vim' "{{{
     nmap <buffer> <ESC> <Plug>(unite_exit)
     imap <buffer> <C-j> <Plug>(unite_select_next_line)
     imap <buffer> <C-k> <Plug>(unite_select_previous_line)
+
+    imap <silent><buffer><expr> <C-v> unite#do_action('right')
+    nmap <silent><buffer><expr> <C-v> unite#do_action('right')
+    imap <silent><buffer><expr> <C-x> unite#do_action('below')
+    nmap <silent><buffer><expr> <C-x> unite#do_action('below')
   endfunction
   autocmd FileType unite call s:unite_settings()
 
