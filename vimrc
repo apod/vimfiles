@@ -168,8 +168,11 @@ set listchars=tab:▶\ ,eol:¬
 
 " Store temporary files in a central spot
 set backup
-set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set backupdir=~/.vim-tmp/backup
+set directory=~/.vim-tmp/swap
+
+" Undo persistence
+set undodir=~/.vim-tmp/undo
 
 " Vim's encoding
 set encoding=utf-8
