@@ -106,12 +106,6 @@ NeoBundle 'osyo-manga/vim-over'
 NeoBundle 'sjl/gundo.vim' "{{{
   nnoremap <F5> :GundoToggle<CR>
 "}}}
-NeoBundle 'SirVer/ultisnips' "{{{
-  let g:UltiSnipsExpandTrigger="<c-j>"
-  let g:UltiSnipsJumpForwardTrigger="<c-j>"
-  let g:UltiSnipsJumpBackwardTrigger="<c-k>"
-  let g:UltiSnipsListSnippets="<c-l>"
-"}}}
 
 " Languages
 NeoBundle 'othree/html5.vim'
