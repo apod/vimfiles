@@ -103,6 +103,9 @@ NeoBundle 'junegunn/vim-easy-align' "{{{
   vnoremap <silent> <Leader><Enter> :LiveEasyAlign<Enter>
 "}}}
 NeoBundle 'osyo-manga/vim-over'
+NeoBundle 'sjl/gundo.vim' " {{{
+  nnoremap <F5> :GundoToggle<CR>
+"}}}
 
 " Languages
 NeoBundle 'othree/html5.vim'
