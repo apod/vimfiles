@@ -107,6 +107,10 @@ NeoBundle 'sjl/gundo.vim' "{{{
   nnoremap <F5> :GundoToggle<CR>
 "}}}
 
+" Text objects
+NeoBundle 'kana/vim-textobj-user'
+NeoBundle 'kana/vim-textobj-line'
+
 " Languages
 NeoBundle 'othree/html5.vim'
 NeoBundle 'vim-ruby/vim-ruby'
