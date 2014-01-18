@@ -71,7 +71,7 @@ NeoBundle 'Shougo/unite.vim' "{{{
   " Mappings
   nnoremap <silent> [unite]<space> :<C-u>Unite -buffer-name=mru file_mru<CR>
   nnoremap <silent> [unite]f :<C-u>Unite -toggle -auto-resize -buffer-name=files file_rec/async:!<CR>
-  nnoremap <silent> [unite]d :<C-u>UniteWithBufferDir -toggle -auto-resize -no-start-insert -buffer-name=files file<CR>
+  nnoremap <silent> [unite]d :<C-u>UniteWithBufferDir -toggle -auto-resize -buffer-name=files file<CR>
   nnoremap <silent> [unite]b :<C-u>Unite -auto-resize -buffer-name=buffers buffer<CR>
   nnoremap <silent> [unite]l :<C-u>Unite -auto-resize -buffer-name=line line<CR>
   nnoremap <silent> [unite]y :<C-u>Unite -buffer-name=yanks history/yank<CR>
