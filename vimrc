@@ -110,6 +110,7 @@ NeoBundle 'sjl/gundo.vim' "{{{
 " Text objects
 NeoBundle 'kana/vim-textobj-user'
 NeoBundle 'kana/vim-textobj-line'
+NeoBundle 'kana/vim-textobj-indent'
 
 " Languages
 NeoBundle 'othree/html5.vim'
