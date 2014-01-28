@@ -291,10 +291,6 @@ nmap <silent> <leader>l :nohlsearch<CR>
 " Toggle invisible character symbols
 nmap <silent> <leader>h :set list!<CR>
 
-" Map <leader>e to pen files in the same directory as the current file
-cnoremap %% <C-r>=expand('%:h') . '/'<CR>
-nmap <leader>e :edit %%
-
 " Map <leader><leader> to switch to alternate file <C-^>
 nmap <leader><leader> <C-^>
 
