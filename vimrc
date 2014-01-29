@@ -224,13 +224,6 @@ augroup filetypes_general
 
   " Disable it for help files
   autocmd FileType help setlocal nospell
-
-  " Some default whitespace settings
-  autocmd FileType ruby,yaml      setlocal ts=2 sts=2 sw=2 et
-  autocmd FileType eruby,html,css setlocal ts=4 sts=4 sw=4 et
-  autocmd FileType python         setlocal ts=4 sts=4 sw=4 et
-  autocmd FileType javascript     setlocal ts=2 sts=2 sw=2 et
-  autocmd FileType coffee         setlocal ts=2 sts=2 sw=2 et
 augroup END
 
 " --------
