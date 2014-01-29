@@ -137,9 +137,6 @@ NeoBundle 'benmills/vimux' "{{{
 NeoBundle 'christoomey/vim-tmux-navigator'
 
 " Color Schemes
-NeoBundle 'nanotech/jellybeans.vim'
-NeoBundle 'chriskempson/vim-tomorrow-theme'
-NeoBundle 'junegunn/seoul256.vim'
 NeoBundle 'jonathanfilip/vim-lucius'
 NeoBundle 'w0ng/vim-hybrid'
 
@@ -190,7 +187,7 @@ set encoding=utf-8
 " Intuitive backspacing
 set backspace=indent,eol,start
 
-" Indentation settings 
+" Indentation settings
 set shiftwidth=2
 set autoindent
 set expandtab
