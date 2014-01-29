@@ -190,8 +190,11 @@ set encoding=utf-8
 " Intuitive backspacing
 set backspace=indent,eol,start
 
-" Default whitespace for all files
-set ts=2 sts=2 sw=2 expandtab
+" Indentation settings 
+set shiftwidth=2
+set autoindent
+set expandtab
+set smarttab
 
 " Colorscheme
 colorscheme hybrid
