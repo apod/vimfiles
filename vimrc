@@ -235,18 +235,6 @@ augroup filetypes_general
   autocmd FileType coffee         setlocal ts=2 sts=2 sw=2 et
 augroup END
 
-
-function! CoffeScriptMappings()
-  nnoremap <leader>cc :CoffeeCompile vert"<cr><C-w>h
-  nnoremap <leader>cw :CoffeeCompile watch vert"<cr>
-endfunction
-
-augroup coffeescript_mappings
-  autocmd!
-
-  autocmd FileType coffee call CoffeScriptMappings()
-augroup END
-
 " --------
 " Mappings
 " --------
