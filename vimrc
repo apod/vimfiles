@@ -166,6 +166,7 @@ set ignorecase                    " Case-insensitive searching.
 set smartcase                     " But case-sensitive if expression contains a capital letter.
 
 set wrap                          " Turn on line wrapping.
+set cursorline                    " Highlight current line
 set scrolloff=3                   " Show 3 lines of context around the cursor.
 
 " Relative line numbers
