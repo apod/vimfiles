@@ -138,7 +138,9 @@ NeoBundle 'christoomey/vim-tmux-navigator'
 
 " Color Schemes
 NeoBundle 'jonathanfilip/vim-lucius'
-NeoBundle 'w0ng/vim-hybrid'
+NeoBundle 'w0ng/vim-hybrid' "{{{
+  let g:hybrid_use_Xresources = 1
+"}}}
 
 " Installation check
 NeoBundleCheck
