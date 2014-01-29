@@ -103,8 +103,11 @@ NeoBundle 'junegunn/vim-easy-align' "{{{
   vnoremap <silent> <Leader><Enter> :LiveEasyAlign<Enter>
 "}}}
 NeoBundle 'osyo-manga/vim-over'
-NeoBundle 'sjl/gundo.vim' "{{{
-  nnoremap <F5> :GundoToggle<CR>
+NeoBundle 'mbbill/undotree' "{{{
+  let g:undotree_WindowLayout=2
+  let g:undotree_SetFocusWhenToggle=1
+  let g:undotree_SplitWidth=40
+  nnoremap <F5> :UndotreeToggle<CR>
 "}}}
 
 " Text objects
