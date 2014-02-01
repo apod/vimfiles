@@ -114,6 +114,7 @@ NeoBundle 'SirVer/ultisnips' "{{{
   let g:UltiSnipsJumpBackwardTrigger='<c-k>'
   let g:UltiSnipsListSnippets='<c-l>'
 "}}}
+NeoBundle 'tommcdo/vim-exchange'
 
 " Text objects
 NeoBundle 'kana/vim-textobj-user'
