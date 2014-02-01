@@ -106,6 +106,14 @@ NeoBundle 'mbbill/undotree' "{{{
   let g:undotree_SplitWidth=40
   nnoremap <F5> :UndotreeToggle<CR>
 "}}}
+NeoBundle 'SirVer/ultisnips' "{{{
+  let g:UltiSnipsSnippetsDir = '~/.vim/snippets'
+  let g:UltiSnipsSnippetDirectories = ['snippets']
+  let g:UltiSnipsExpandTrigger='<c-j>'
+  let g:UltiSnipsJumpForwardTrigger='<c-j>'
+  let g:UltiSnipsJumpBackwardTrigger='<c-k>'
+  let g:UltiSnipsListSnippets='<c-l>'
+"}}}
 
 " Text objects
 NeoBundle 'kana/vim-textobj-user'
