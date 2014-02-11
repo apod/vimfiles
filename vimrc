@@ -176,6 +176,7 @@ set cursorline                    " Highlight current line
 set scrolloff=3                   " Show 3 lines of context around the cursor.
 
 " Relative line numbers
+set number
 set relativenumber
 
 " Invisible character symbols
