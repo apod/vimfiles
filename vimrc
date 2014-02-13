@@ -119,8 +119,8 @@ NeoBundle 'AndrewRadev/splitjoin.vim'
 
 " Text objects
 NeoBundle 'kana/vim-textobj-user'
-NeoBundle 'kana/vim-textobj-line'
 NeoBundle 'kana/vim-textobj-indent'
+NeoBundle 'wellle/targets.vim'
 
 " Languages
 NeoBundle 'othree/html5.vim'
