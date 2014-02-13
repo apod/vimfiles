@@ -115,6 +115,7 @@ NeoBundle 'SirVer/ultisnips' "{{{
   let g:UltiSnipsListSnippets='<c-l>'
 "}}}
 NeoBundle 'tommcdo/vim-exchange'
+NeoBundle 'AndrewRadev/splitjoin.vim'
 
 " Text objects
 NeoBundle 'kana/vim-textobj-user'
