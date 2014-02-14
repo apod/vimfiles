@@ -114,7 +114,9 @@ NeoBundle 'SirVer/ultisnips' "{{{
   let g:UltiSnipsJumpBackwardTrigger='<c-k>'
   let g:UltiSnipsListSnippets='<c-l>'
 "}}}
-NeoBundle 'tommcdo/vim-exchange'
+NeoBundle 'tommcdo/vim-exchange' "{{{
+  vnoremap <leader>cx <Plug>(Exchange)
+"}}}
 NeoBundle 'AndrewRadev/splitjoin.vim'
 
 " Text objects
