@@ -358,17 +358,20 @@ endif
 if has('gui_running')
   let os=substitute(system('uname'), '\n', '', '')
 
-  set go-=T " Remove toolbar
+  " Remove toolbar
+  set guioptions-=T
 
   " Remove vertical scrolling from both sides
   set guioptions-=r
   set guioptions-=L
 
   if os == 'Linux'
-    set guioptions-=m                 " Remove menu bar
-    set guifont=DejaVu\ Sans\ Mono\ 9 " Change font
+    " Remove menu bar
+    set guioptions-=m
+
+    set guifont=DejaVu\ Sans\ Mono\ 9
   elseif == 'Darwin'
-    set guifont=Menlo:h11 " Change font
+    set guifont=Menlo:h11
 
     " Default dimensions for a new window
     set lines=80 columns=120
