@@ -118,6 +118,7 @@ NeoBundle 'tommcdo/vim-exchange' "{{{
   vnoremap <leader>cx <Plug>(Exchange)
 "}}}
 NeoBundle 'AndrewRadev/splitjoin.vim'
+NeoBundle 'kien/rainbow_parentheses.vim'
 
 " Text objects
 NeoBundle 'kana/vim-textobj-user'
