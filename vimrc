@@ -170,7 +170,7 @@ set hidden
 " Bigger command history
 set history=1000
 
-set hlsearch                      " Highlight searches
+" set hlsearch                      " Highlight searches
 set incsearch                     " ... incrementally as they are typed
 set ignorecase                    " Case-insensitive searching.
 set smartcase                     " But case-sensitive if expression contains a capital letter.
