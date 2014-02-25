@@ -114,13 +114,7 @@ NeoBundle 'SirVer/ultisnips' "{{{
   let g:UltiSnipsJumpBackwardTrigger='<c-k>'
   let g:UltiSnipsListSnippets='<c-l>'
 "}}}
-NeoBundle 'tommcdo/vim-exchange' "{{{
-  let g:exchange_no_mappings=1
-  nmap cx <Plug>(Exchange)
-  vmap X <Plug>(Exchange)
-  nmap cxc <Plug>(ExchangeClear)
-  nmap cxx <Plug>(ExchangeLine)
-"}}}
+NeoBundle 'tommcdo/vim-exchange'
 NeoBundle 'AndrewRadev/splitjoin.vim'
 NeoBundle 'kien/rainbow_parentheses.vim'
 
