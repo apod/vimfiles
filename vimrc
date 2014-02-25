@@ -116,6 +116,7 @@ NeoBundle 'SirVer/ultisnips' "{{{
 "}}}
 NeoBundle 'tommcdo/vim-exchange'
 NeoBundle 'AndrewRadev/splitjoin.vim'
+NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'kien/rainbow_parentheses.vim'
 
 " Text objects
