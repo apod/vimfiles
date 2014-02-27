@@ -131,6 +131,7 @@ NeoBundle 'slim-template/vim-slim'
 NeoBundle 'tpope/vim-haml'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'jnwhiteh/vim-golang'
+NeoBundle 'andreimaxim/vim-io'
 
 " Language Frameworks
 NeoBundle 'tpope/vim-rails'
