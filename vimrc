@@ -134,6 +134,11 @@ NeoBundle 'jnwhiteh/vim-golang'
 NeoBundle 'andreimaxim/vim-io'
 NeoBundle 'derekwyatt/vim-scala'
 
+" Clojure
+NeoBundle 'tpope/vim-classpath'
+NeoBundle 'tpope/vim-fireplace'
+NeoBundle 'guns/vim-clojure-static'
+
 " Language Frameworks
 NeoBundle 'tpope/vim-rails'
 
