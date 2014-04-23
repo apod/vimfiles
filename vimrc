@@ -138,6 +138,7 @@ NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'tpope/vim-classpath'
 NeoBundle 'tpope/vim-fireplace'
 NeoBundle 'guns/vim-clojure-static'
+NeoBundle 'guns/vim-clojure-highlight'
 
 " Language Frameworks
 NeoBundle 'tpope/vim-rails'
