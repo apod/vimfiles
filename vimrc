@@ -6,7 +6,7 @@ if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
@@ -43,11 +43,11 @@ NeoBundle 'Shougo/unite.vim' "{{{
   endif
 
   " Use the fuzzy matcher
-  call unite#filters#matcher_default#use(['matcher_fuzzy'])
+  " call unite#filters#matcher_default#use(['matcher_fuzzy'])
   " Use the rank sorter
-  call unite#filters#sorter_default#use(['sorter_rank'])
-  call unite#custom#source('file_rec/async', 'ignore_pattern', '\.\%(png\|gif\|jpe\?g\|swf\|ttf\|eot\|woff\)$')
-  call unite#custom#source('grep', 'ignore_pattern', '\.\%(png\|gif\|jpe\?g\|swf\|ttf\|eot\|woff\|log\)$')
+  " call unite#filters#sorter_default#use(['sorter_rank'])
+  " call unite#custom#source('file_rec/async', 'ignore_pattern', '\.\%(png\|gif\|jpe\?g\|swf\|ttf\|eot\|woff\)$')
+  " call unite#custom#source('grep', 'ignore_pattern', '\.\%(png\|gif\|jpe\?g\|swf\|ttf\|eot\|woff\|log\)$')
 
   function! s:unite_settings()
     nmap <buffer> <ESC> <Plug>(unite_exit)
@@ -159,6 +159,8 @@ NeoBundle 'christoomey/vim-tmux-navigator'
 NeoBundle 'jonathanfilip/vim-lucius'
 NeoBundle 'w0ng/vim-hybrid'
 
+call neobundle#end()
+
 " Installation check
 NeoBundleCheck
 
@@ -190,7 +192,7 @@ set number
 set relativenumber
 
 " Invisible character symbols
-set listchars=tab:▶\ ,eol:¬
+" set listchars=tab:▶\ ,eol:¬
 
 " Store temporary files in a central spot
 set backup
